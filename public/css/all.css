@@ -1,0 +1,367 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+	box-sizing:border-box;
+}
+ul{
+	list-style:none;
+}
+/********************************header**********************************/
+
+
+
+/***顶部list***/
+header .top{
+	border-bottom:1px solid #cccccc;
+}
+header .top .top_list{
+	height:30px;
+	line-height:30px;
+	width:1200px;
+	margin:0px auto;
+}
+.top_list .list_left{
+	float:left;
+}
+.top_list .list_left a{
+	padding-left:5px;
+	text-decoration:none;
+	color:#000;
+}
+.top_list .list_left a:hover{
+	color:red;
+}
+.top_list .list_right{
+	float:right;
+}
+.list_right a{
+	float:left;
+	color:#000;
+	line-height:30px;
+	text-decoration:none;
+}
+.list_right a:hover{
+	color:red;
+}
+/***logo图片***/
+header .image{
+	height:80px;
+	width:1200px;
+	margin:0px auto;
+}
+header .image .dflogo{
+	height:80px;
+	margin-left:30px;
+	float:left;
+}
+header .image .head_mm{
+	height:38px;
+	margin-left:200px;
+	margin-top:21px;
+	float:left;
+}
+header .image .gg_icon{
+	height:57px;
+	margin-top:11px;
+	float:right;
+}
+/***nav导航栏***/
+header .nav{
+	width:100%;
+	height:40px;
+	position:relative;
+	background-color:#FE4300;
+}
+header .nav .nav_list{
+	width:1200px;
+	height:40px;
+	margin:0px auto;
+	position:relative;
+}
+header .nav .nav_list>a{
+	width:120px;
+	float:left;
+	font-size:16px;
+	color:white;
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+}
+header .nav .nav_list>a:hover{
+	background-color:red;
+}
+header .nav .nav_list .newn{
+	position:absolute;
+	top:-5px;
+	left:310px;
+}
+header .nav .nav_list .new{
+	width:200px;
+	position:absolute;
+	right:0px;
+}
+.nav_list .new li{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-color:#FE4300;
+}
+.nav_list .new>ul{
+	display:block
+}
+.nav_list .new li:hover{
+	background-color:red;
+}
+.nav_list .new>ul>li>ul{
+	display:none;
+}
+.nav_list .new>ul>li:hover>ul{
+	display:block;
+}
+.nav_list .new a{
+	color:white;
+	text-decoration:none;
+}
+.nav_list .new a:hover{
+	text-decoration:underline;
+}
+/********************************轮播图********************************/
+.banner{
+	width:100%;
+	height:350px;
+	border:1px solid black;
+}
+
+/********************************section**********************************/
+/***图片返利链接***/
+.link{
+	width:1200px;
+	margin:20px auto;
+} 
+.link .link_img{
+	width:1200px;
+}
+.link .link_img:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.link .link_img .left_img{
+	float:left;
+}
+.link .link_img .left_img table{
+	border-collapse:collapse;
+	border-top:1px solid #EFEFEF;
+	border-right:1px solid #EFEFEF;
+}
+.link .link_img .left_img td{
+	width:179px;
+	height:129px;
+	text-align:center;
+	vertical-align:middle;
+	border-bottom:1px solid #EFEFEF;
+	border-left:1px solid #EFEFEF;
+}
+.link .link_img .right_img{
+	float:left;
+}
+.link .link_img .right_img table{
+	border-collapse:collapse;
+	border-top:1px solid #EFEFEF;
+	border-right:1px solid #EFEFEF;
+}
+.link .link_img .right_img td{
+	width:148px;
+	height:129px;
+	text-align:center;
+	vertical-align:middle;
+	border-bottom:1px solid #EFEFEF;
+	border-left:1px solid #EFEFEF;
+}
+/************************big_img****************************/
+.big_img{
+	margin-top:20px;
+	width:1200px;
+	border:1px solid #EFEFEF;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.big_img a:nth-child(1){
+	width:260px;
+	text-align:center;
+}
+/************************每日推荐******************************/
+.link .content{
+	width:112px;
+	padding:10px 0px 10px 0px;
+}
+.link .content p{
+	padding-right:30px;
+	border-right:2px solid #e5e5e5;
+	font-size:20px;
+}
+/******************************商品展示*********************************/
+section .product{
+	width:1200px;
+	margin:0px auto;
+}
+section .product table{
+	width:1200px;
+	border-spacing:10px;
+}
+section .product table td{
+	width:265px;
+	position:relative;
+}
+section .product a{
+	font-size:13px;
+	text-decoration:none;
+	color:black;
+}
+section .product a:first-child{
+	width:100%;
+}
+section .product img{
+	width:100%;
+}
+section .product p{
+	font-size:18px;
+	color:red;
+	margin:10px 5px;
+}
+section .product p span{
+	color:#5e5e5e;
+	text-decoration:line-through;
+}
+section .product a:last-child{
+	color:white;
+	padding:10px 20px;
+	background-color:red;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+}
+
+
+
+
+/*******************************footer***********************************/
+/*************************底部头***********************/
+footer{
+	margin-top:100px;
+	border-top:2px solid red;
+}
+footer .foot_top{
+	width:100%;
+	border:1px solid #F0F0F0;
+	
+	height:120px;
+	background-color:#FAFAFA;
+}
+.foot_top .jiang{
+	width:1200px;
+	height:120px;
+	margin:0px auto;
+	display:flex;
+	justify-content:space-between;
+}
+.foot_top .jiang .img_text li{
+	float:left;
+	margin-top:28px;
+}
+.foot_top .jiang .img_text li p{
+	font-size:16px;
+	padding-left:30px;
+}
+.foot_top .jiang .img_text li p:first-child{
+	font-weight:bold;
+	font-size:20px;
+}
+/***********************底部中间list******************/
+.foot_middle{
+	width:1200px;
+	padding:10px 0px;
+	margin:0px auto;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+}
+/*左*/
+.foot_middle .phone p{
+	padding:5px;
+}
+.foot_middle .phone p:first-child{
+	font-size:15px;
+}
+.foot_middle .phone p:nth-child(2){
+	font-size:25px;
+}
+.foot_middle .phone p:last-child{
+	display:flex;
+}
+.phone p:last-child span{
+	align-items:center;
+}
+/*中*/
+
+.foot_middle .menu>ul{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+}
+.foot_middle .menu>ul>li{
+	padding:0px 30px;
+}
+.foot_middle .menu>ul>li>ul>li a{
+	text-decoration:none;
+	color:#000;
+	line-height:20px;
+}
+.foot_middle .menu>ul>li>ul>li:first-child a{
+	font-size:15px;
+	line-height:40px;
+}
+/*右*/
+/****************************底部bottom**********************************/
+/*list链接*/
+.bottom{
+	padding:10px 0;
+}
+.bottom ul{
+	display:flex;
+	justify-content:center;
+}
+.bottom ul li a{
+	color:#000;
+	text-decoration:none;
+}
+.bottom ul li:nth-child(2){
+	position:relative;
+} 
+.bottom ul li:nth-child(2) img{
+	position:relative;
+	top:-10px;
+}
+.bottom ul li:nth-child(5) a{
+	color:red ;
+}
+.bottom ul li span{
+	padding:5px 10px;
+}
+/*版权*/
+.copyright{
+	padding-top:50px;
+	display:flex;
+	justify-content:center;
+}
+/*图片*/
+.bottom_img{
+	display:flex;
+	justify-content:center;
+	padding:20px 0px;
+}
+.bottom_img img{
+	padding:0 5px;
+}

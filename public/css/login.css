@@ -1,0 +1,93 @@
+.content{
+	width:1000px;
+	height:350px;
+	background-size:cover;
+	margin:0px auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	position:relative;
+}
+.TXT{
+	width:300px;
+	padding:10px;
+	border:1px solid #ccc;
+	box-shadow:5px 5px 5px #ccc;
+	background-color:rgba(204,204,204,0.5);
+	position:relative;
+}
+.TXT .welcome{
+	display:flex;
+	justify-content:space-between;
+	padding-bottom:10px;
+	line-height:20px;
+	color:black;
+}
+.welcome a{
+	color:#FE4300;
+}
+.welcome p{
+	font-size:20px;
+}
+.TXT .text{
+	position:relative;
+}
+.text input{
+	width:280px;
+	height:40px;
+	padding:10px;
+	margin-top:30px;
+}
+.text span img{
+	position:absolute;
+	right:20px;
+	top:36px;
+}
+.chose{
+	padding:30px 0 10px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.TXT .login{
+	width:280px;
+	height:40px;
+	color:white;
+	background-color:#FE4300;
+	border:none;
+	border-radius:3px;
+	margin:0px auto;
+	display:block;
+	box-shadow:2px 3px 3px #888;
+}
+.TXT #showUser{
+	width:280px;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	position:absolute;
+	top:110px;
+	left:10px;
+}
+.TXT #showUpwd{
+	width:280px;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	position:absolute;
+	top:180px;
+	left:10px;
+}
+#fixe{
+	position:fixed;
+	display:none;
+	width:300px;
+	height:150px;
+	background:rgba(36,36,36,0.8);
+	color:white;
+	text-align:center;
+	line-height:150px;
+	font-size:15px;
+	opacity:1;
+	transition:all 1s linear;
+}

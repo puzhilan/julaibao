@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <script src="js/vue.js"></script>
+  <title>详情</title>
+ </head>
+ <body>
+  <div id="head"></div>
+  <header id="header"></header>
+  <div class="all">
+	<div class="top">
+		<div class="left">
+			<div class="md_img">
+				<img src="img/detail/md1.jpg">
+			</div>
+			<ul class="sm_img">
+				<li><img src="img/detail/sm1.jpg" data-md="img/detail/md1.jpg" data-lg="img/detail/lg1.jpg"></li>
+				<li><img src="img/detail/sm2.jpg" data-md="img/detail/md2.jpg" data-lg="img/detail/lg2.jpg"></li>
+				<li><img src="img/detail/sm3.jpg" data-md="img/detail/md3.jpg" data-lg="img/detail/lg3.jpg"></li>
+				<li><img src="img/detail/sm4.jpg" data-md="img/detail/md4.jpg" data-lg="img/detail/lg4.jpg"></li>
+				<li><img src="img/detail/sm5.jpg" data-md="img/detail/md5.jpg" data-lg="img/detail/lg5.jpg"></li>
+			</ul>
+			<div id="mask" class="d_none"></div>
+			<div id="super_mask"></div>
+			<div id="lg_img" class="d_none"></div>
+		</div>
+		<div class="right">
+			<!--
+			<h6>白衬衫女长袖2018秋季新款蕾丝花边纯棉打底衫修身气质淑女棉衬衣</h6>
+			<p>纯棉柔软 蕾丝花边拼接</p>
+			<table class="info">
+				
+				<tr>
+					<td>价格</td>
+					<td>￥<s>208.00</s> <img src="img/detail/TB1okcBKVXXXXbBXVXXXXXXXXXX-116-32.png"></td>
+				</tr>
+				<tr>
+					<td>促销价</td>
+					<td>￥89.00</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<p>想￥89.00拿下？</p>
+						<span>手机天猫购买更便宜</span>
+						<img src="img/detail/bg.png">
+					</td>
+				</tr>
+			</table>
+			<div id="jd" class="d_none">
+				<img src="img/detail/TB1bXaEPFXXXXc9XpXXwu0bFXXX.png">
+			</div>
+			<div class="score">
+				<p>月销量 <span>30</span></p>
+				<span>|</span>
+				<p>累计评价 <span>591</span></p>
+				<span>|</span>
+				<p>送天猫积分 <span>44</span></p>	
+			</div>
+			-->
+			<!--
+			<table class="chose">
+				<tr>
+					<td>运费</td>
+					<td>
+						<span>上海 至</span>
+						<select name="city" id="city">
+							<option value="">北京</option>
+							<option value="">深圳</option>
+							<option value="">广州</option>
+							<option value="">四川</option>
+						</select>
+						<span>快递：<b>0.00</b></span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>尺码</td>
+					<td>
+						<a href="#">S</a>
+						<a href="#>M</a>
+						<a href="#>L</a>
+						<a href="#>XL</a>
+						<a href="#>XXL</a>
+					</td>
+				</tr>
+				<tr>
+					<td>颜色分类</td>
+					<td>
+						<img src="img/detail/sm1.jpg">
+					</td>
+				</tr>
+				<tr>
+					<td>数量</td>
+					<td>
+						<button class="btn1">-</button>
+						<input type="text">
+						<button class="btn2">+</button>
+						<span>库存<b>1894</b>件</span>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button>立即购买</button>
+						<button>加入购物车</button>	
+					</td>
+				</tr>
+			</table>
+			-->
+		</div>
+    </div>
+	<div class="detail">
+		<div class="text">
+			<div class="tp">
+				<ul>
+					<li>商品详情</li>
+					<li>累计评价<span>549</span></li>
+				</ul>
+				<div class="erweima">
+					<span>手机购买</span>
+					<img src="img/detail/bg.png">
+				</div>
+			</div>
+			<div id="jd2" class="d_none">
+				<img src="img/detail/TB1bXaEPFXXXXc9XpXXwu0bFXXX.png">
+			</div>
+			<table class="detail_info">
+				<tr>
+					<td colspan="3">品牌名称：Cuooyino/初影</td>
+				</tr>
+				<tr>
+					<td colspan="3">产品参数：</td>
+				</tr>
+				<tr>
+					<td>材质成分: 棉100%</td>
+					<td>销售渠道类型: 纯电商(只在线上销售)</td>
+					<td>货号: CY6003</td>
+				</tr>
+				<tr>
+					<td>服装版型: 修身</td>
+					<td>风格: 通勤</td>
+					<td>通勤: 韩版</td>
+				</tr>
+				<tr>
+					<td>衣长: 常规款</td>
+					<td>袖长: 长袖</td>
+					<td>袖型: 常规</td>
+				</tr>
+				<tr>
+					<td>领型: POLO领</td>
+					<td>衣门襟: 单排多扣</td>
+					<td>图案: 纯色</td>
+				</tr>
+				<tr>
+					<td>服装款式细节: 纽扣</td>
+					<td>品牌: Cuooyino/初影</td>
+					<td>适用年龄: 25-29周岁</td>
+				</tr>
+				<tr>
+					<td>年份季节: 2018年春季</td>
+					<td>颜色分类: 白色</td>
+					<td>尺码: S M L XL XXL</td>
+				</tr>
+			</table>
+			<div class="detail_img">
+				<img id="pic1" src="img/detail/TB2LpugckWM.eBjSZFhXXbdWpXa_!!3029060390.jpg">
+				<img src="img/detail/TB22dqkcheK.eBjSZFlXXaywXXa_!!3029060390.jpg">
+				<img src="img/detail/TB2wxqoclyN.eBjSZFkXXb8YFXa_!!3029060390.jpg">
+				<img id="pic2" src="img/detail/TB2dC_zbSGI.eBjSspcXXcVjFXa_!!3029060390.jpg">
+				<img id="pic3" src="img/detail/TB2jRWeco5O.eBjSZFxXXaaJFXa_!!3029060390.jpg">
+				<img src="img/detail/TB26APnbNeI.eBjSsplXXX6GFXa_!!3029060390.jpg">
+				<img id="pic4" src="img/detail/TB25H_NbR9J.eBjy0FoXXXyvpXa_!!3029060390.jpg">
+				<img src="img/detail/TB2az_ebHaI.eBjy1XdXXcoqXXa_!!3029060390.jpg">
+				<img src="img/detail/TB2rC6lcmCI.eBjy1XbXXbUBFXa_!!3029060390.jpg">
+				<img src="img/detail/TB1.CUdsY9YBuNjy0FgXXcxcXXa-1572-394.png">
+			</div>
+			<table class="prompt">
+				<tr>
+					<td><h6>安全提示：</h6></td>
+					<td>
+						<p>请勿随意接收任何来源不明的文件，请勿随意点击任何来源不明的链接。涉及资金往来的事项请务必仔细核对资金往来信息。 天猫不会以订单有问题，让您提供任何银行卡、密码、手机验证码！遇到可疑情况可在钱盾“诈骗举报”中进行举报。</p>
+					</td>
+				</tr>
+				<tr>
+					<td><h6>内容声明：</h6></td>
+					<td>
+						<p>天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="shopping_car" id="shopping_car">
+			<a href="#" class="in_car">
+				<img src="img/detail/product_detail_img7.png">
+				加入购物车
+			</a>
+			<ul>
+				<a href="#pic1">
+					<li>产品图</li>
+				</a>
+				<a href="#pic2">
+					<li>产品尺寸图</li>
+				</a>
+				<a href="#pic3">
+					<li>模特效果图</li>
+				</a>
+				<a href="#pic4">
+					<li>细节图</li>
+				</a>
+				<a href="#head">
+					<li>返回顶部</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+  </div>
+  <iframe src="footer.html" frameborder="0" class="my_footer"></iframe>	
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/detail.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+ </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+ 
+  <title>用户登录</title>
+ </head>
+ <body>
+	<header id="header"></header>
+	<div class="content">
+		<div class="image">
+			<img src="img/login/login_161125.png">
+		</div>
+		<div class="TXT">
+			<div class="welcome">
+				<p>欢迎登录聚来宝</p>
+				<a href="register.html">新用户注册</a>
+			</div>
+			<hr />
+			<div class="text">
+				<input type="text" name="account" id="account" placeholder="请输入账号..." />
+				<span><img src="img/login/yhm.png"></span>
+			</div>
+			<div class="text">
+				<input type="password" name="password" id="password" placeholder="请输入密码..." />
+				<span><img src="img/login/mm.png"></span>
+			</div>
+			<div class="chose">
+				<div>
+					<input type="checkbox" id="checkbox"><label for="checkbox"></label>自动登录
+				</div>
+				<p>忘记密码？</p>
+			</div>
+			<input type="button" id="login" class="login" value="登录">
+			<div id="showUser"></div>
+			<div id="showUpwd"></div>
+		</div>
+	</div>
+	<div id="fixe">
+		登录成功，跳转到主页！
+	</div>
+	<footer id="footer"></footer>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/xhr.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+ </body>
+</html>

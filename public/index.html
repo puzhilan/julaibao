@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <title>首页</title>
+ <style></style>
+ </head>
+ <body>
+  <header id='header'></header>
+  <div class="section">
+	<!--轮播图-->
+		<div class="banner">
+			<div class="banner_img">
+				<img src="img/banner/0820-1.jpg" style="opacity:1">
+				<img src="img/banner/0820-2.jpg">
+				<img src="img/banner/0820-3.jpg">
+				<img src="img/banner/0820-4.jpg">
+			</div>
+			<div class="switch">
+				<div id="prev">
+					<img src="img/banner/left.png">
+				</div>
+				<div id="next">
+					<img src="img/banner/right.png">
+				</div>
+			</div>
+			
+		</div>
+	<!--返利图片链接-->
+		<div class="link">
+			<div class="link_img">
+				<div class="left_img">
+					<table>
+						<tr>
+							<td>
+								<a href="http://www.lzyx.com/index.php?mod=tao&act=index">
+									<img src="img/fanli_link/B4AC6388C3CE5C97.png">
+								</a>
+							</td>
+							<td>
+								<a href="https://www.jd.com/">
+									<img src="img/fanli_link/FE5EDEAB9A4A8355.png">
+								</a>
+							</td>
+							<td>
+								<a href="http://www.lzyx.com/goods/index-zhidemai.html">
+									<img src="img/fanli_link/6F9F4957EB374A47.jpg">
+								</a>
+							</td>
+							<td>
+								<a href="https://www.suning.com/">
+									<img src="img/fanli_link/E66FDFB517DBCA9C.jpg">
+								</a>
+							</td>
+							<td>
+								<a href="https://www.mia.com/">
+									<img src="img/fanli_link/EE0343B3103A03DC.jpg">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://www.lzyx.com/goods/index-cf-10001.html">
+									<img src="img/fanli_link/DC5800D6BFA8FB7C.jpg">
+								</a>
+							</td>
+							<td>
+								<a href="http://pc.discoveredcn.com/">
+									<img src="img/fanli_link/2145FA53D88A8990.jpg">
+								</a>
+							</td>
+							<td>
+								<a href="http://www.vip.com/">
+									<img src="img/fanli_link/5925B71B10AA4F50.png">
+								</a>
+							</td>
+							<td>
+								<a href="http://bj.jumei.com/">
+									<img src="img/fanli_link/2EBE8ADB68D7B98F.png">
+								</a>
+							</td>
+							<td>
+								<a href="http://corp.zhiwo.com/">
+									<img src="img/fanli_link/F338A58F48FBC1EE.png">
+								</a>
+							</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="right_img">
+					<table>
+						<tr>
+							<td><a href="#"><img src="img/fanli_link/tr_img1a.png"></a></td>
+							<td><a href="#"><img src="img/fanli_link/tr_img2a.png"></a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="img/fanli_link/tr_img3a.png"></a></td>
+							<td><a href="#"><img src="img/fanli_link/tr_img4a.png"></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	<!--大图片-->
+			<div class="big_img">
+				<a href="#"><img src="img/fanli_link/FE5EDEAB9A4A8355.jpg" alt="加载中"></a>
+				<a href="#"><img src="img/fanli_link/CB68E7C21ADEBDC2.jpg" alt="加载中"></a>	
+			</div>
+	<!--每日推荐-->
+			<div class="content"><p>每日推荐</p></div>
+		</div>
+	<!--产品展示-->
+		<div class="product">
+			<table>
+				 <tr>
+					<td>
+						<a :href="res[0].href">
+							<img :src="res[0].pic">
+						</a>
+						<a :href="res[0].href">{{res[0].title}}</a>
+						<p>¥{{res[0].price.toFixed(2)}}<span>¥{{res[0].cost.toFixed(2)}}</span></p>
+						<a :href="res[0].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[1].href">
+							<img :src="res[1].pic">
+						</a>
+						<a :href="res[1].href">{{res[1].title}}</a>
+						<p>¥{{res[1].price.toFixed(2)}}<span>¥{{res[1].cost.toFixed(2)}}</span></p>
+						<a :href="res[1].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[2].href">
+							<img :src="res[2].pic">
+						</a>
+						<a :href="res[2].href">{{res[2].title}}</a>
+						<p>¥{{res[2].price.toFixed(2)}}<span>¥{{res[2].cost.toFixed(2)}}</span></p>
+						<a :href="res[2].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[3].href">
+							<img :src="res[3].pic">
+						</a>
+						<a :href="res[3].href">{{res[3].title}}</a>
+						<p>¥{{res[3].price.toFixed(2)}}<span>¥{{res[3].cost.toFixed(2)}}</span></p>
+						<a :href="res[3].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[4].href">
+							<img :src="res[4].pic">
+						</a>
+						<a :href="res[4].href">{{res[4].title}}</a>
+						<p>¥{{res[4].price.toFixed(2)}}<span>¥{{res[4].cost.toFixed(2)}}</span></p>
+						<a :href="res[4].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[5].href">
+							<img :src="res[5].pic">
+						</a>
+						<a :href="res[5].href">{{res[5].title}}</a>
+						<p>¥{{res[5].price.toFixed(2)}}<span>¥{{res[5].cost.toFixed(2)}}</span></p>
+						<a :href="res[5].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[6].href">
+							<img :src="res[6].pic">
+						</a>
+						<a :href="res[6].href">{{res[6].title}}</a>
+						<p>¥{{res[6].price.toFixed(2)}}<span>¥{{res[6].cost.toFixed(2)}}</span></p>
+						<a :href="res[6].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[7].href">
+							<img :src="res[7].pic">
+						</a>
+						<a :href="res[7].href">{{res[7].title}}</a>
+						<p>¥{{res[7].price.toFixed(2)}}<span>¥{{res[7].cost.toFixed(2)}}</span></p>
+						<a :href="res[7].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[8].href">
+							<img :src="res[8].pic">
+						</a>
+						<a :href="res[8].href">{{res[8].title}}</a>
+						<p>¥{{res[8].price.toFixed(2)}}<span>¥{{res[8].cost.toFixed(2)}}</span></p>
+						<a :href="res[8].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[9].href">
+							<img :src="res[9].pic">
+						</a>
+						<a :href="res[9].href">{{res[3].title}}</a>
+						<p>¥{{res[9].price.toFixed(2)}}<span>¥{{res[9].cost.toFixed(2)}}</span></p>
+						<a :href="res[9].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[10].href">
+							<img :src="res[10].pic">
+						</a>
+						<a :href="res[10].href">{{res[10].title}}</a>
+						<p>¥{{res[10].price.toFixed(2)}}<span>¥{{res[10].cost.toFixed(2)}}</span></p>
+						<a :href="res[10].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[11].href">
+							<img :src="res[11].pic">
+						</a>
+						<a :href="res[11].href">{{res[11].title}}</a>
+						<p>¥{{res[11].price.toFixed(2)}}<span>¥{{res[11].cost.toFixed(2)}}</span></p>
+						<a :href="res[11].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[12].href">
+							<img :src="res[12].pic">
+						</a>
+						<a :href="res[12].href">{{res[12].title}}</a>
+						<p>¥{{res[12].price.toFixed(2)}}<span>¥{{res[12].cost.toFixed(2)}}</span></p>
+						<a :href="res[12].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[13].href">
+							<img :src="res[13].pic">
+						</a>
+						<a :href="res[13].href">{{res[13].title}}</a>
+						<p>¥{{res[13].price.toFixed(2)}}<span>¥{{res[13].cost.toFixed(2)}}</span></p>
+						<a :href="res[13].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[14].href">
+							<img :src="res[14].pic">
+						</a>
+						<a :href="res[14].href">{{res[14].title}}</a>
+						<p>¥{{res[14].price.toFixed(2)}}<span>¥{{res[14].cost.toFixed(2)}}</span></p>
+						<a :href="res[14].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[15].href">
+							<img :src="res[15].pic">
+						</a>
+						<a :href="res[15].href">{{res[15].title}}</a>
+						<p>¥{{res[15].price.toFixed(2)}}<span>¥{{res[15].cost.toFixed(2)}}</span></p>
+						<a :href="res[15].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[16].href">
+							<img :src="res[16].pic">
+						</a>
+						<a :href="res[16].href">{{res[16].title}}</a>
+						<p>¥{{res[16].price.toFixed(2)}}<span>¥{{res[16].cost.toFixed(2)}}</span></p>
+						<a :href="res[16].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[17].href">
+							<img :src="res[17].pic">
+						</a>
+						<a :href="res[17].href">{{res[1].title}}</a>
+						<p>¥{{res[17].price.toFixed(2)}}<span>¥{{res[17].cost.toFixed(2)}}</span></p>
+						<a :href="res[17].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[18].href">
+							<img :src="res[18].pic">
+						</a>
+						<a :href="res[18].href">{{res[18].title}}</a>
+						<p>¥{{res[18].price.toFixed(2)}}<span>¥{{res[18].cost.toFixed(2)}}</span></p>
+						<a :href="res[18].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[19].href">
+							<img :src="res[19].pic">
+						</a>
+						<a :href="res[19].href">{{res[19].title}}</a>
+						<p>¥{{res[19].price.toFixed(2)}}<span>¥{{res[19].cost.toFixed(2)}}</span></p>
+						<a :href="res[19].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[20].href">
+							<img :src="res[20].pic">
+						</a>
+						<a :href="res[20].href">{{res[20].title}}</a>
+						<p>¥{{res[20].price.toFixed(2)}}<span>¥{{res[20].cost.toFixed(2)}}</span></p>
+						<a :href="res[20].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[21].href">
+							<img :src="res[21].pic">
+						</a>
+						<a :href="res[21].href">{{res[21].title}}</a>
+						<p>¥{{res[21].price.toFixed(2)}}<span>¥{{res[21].cost.toFixed(2)}}</span></p>
+						<a :href="res[21].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[22].href">
+							<img :src="res[22].pic">
+						</a>
+						<a :href="res[22].href">{{res[22].title}}</a>
+						<p>¥{{res[22].price.toFixed(2)}}<span>¥{{res[22].cost.toFixed(2)}}</span></p>
+						<a :href="res[22].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[23].href">
+							<img :src="res[23].pic">
+						</a>
+						<a :href="res[23].href">{{res[23].title}}</a>
+						<p>¥{{res[23].price.toFixed(2)}}<span>¥{{res[23].cost.toFixed(2)}}</span></p>
+						<a :href="res[23].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[24].href">
+							<img :src="res[24].pic">
+						</a>
+						<a :href="res[24].href">{{res[0].title}}</a>
+						<p>¥{{res[24].price.toFixed(2)}}<span>¥{{res[24].cost.toFixed(2)}}</span></p>
+						<a :href="res[24].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[25].href">
+							<img :src="res[25].pic">
+						</a>
+						<a :href="res[25].href">{{res[25].title}}</a>
+						<p>¥{{res[25].price.toFixed(2)}}<span>¥{{res[25].cost.toFixed(2)}}</span></p>
+						<a :href="res[25].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[26].href">
+							<img :src="res[26].pic">
+						</a>
+						<a :href="res[26].href">{{res[26].title}}</a>
+						<p>¥{{res[26].price.toFixed(2)}}<span>¥{{res[26].cost.toFixed(2)}}</span></p>
+						<a :href="res[26].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[27].href">
+							<img :src="res[27].pic">
+						</a>
+						<a :href="res[27].href">{{res[27].title}}</a>
+						<p>¥{{res[27].price.toFixed(2)}}<span>¥{{res[27].cost.toFixed(2)}}</span></p>
+						<a :href="res[27].href">点击购买</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a :href="res[28].href">
+							<img :src="res[28].pic">
+						</a>
+						<a :href="res[28].href">{{res[28].title}}</a>
+						<p>¥{{res[28].price.toFixed(2)}}<span>¥{{res[28].cost.toFixed(2)}}</span></p>
+						<a :href="res[28].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[29].href">
+							<img :src="res[29].pic">
+						</a>
+						<a :href="res[29].href">{{res[29].title}}</a>
+						<p>¥{{res[29].price.toFixed(2)}}<span>¥{{res[29].cost.toFixed(2)}}</span></p>
+						<a :href="res[29].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[30].href">
+							<img :src="res[30].pic">
+						</a>
+						<a :href="res[30].href">{{res[30].title}}</a>
+						<p>¥{{res[30].price.toFixed(2)}}<span>¥{{res[30].cost.toFixed(2)}}</span></p>
+						<a :href="res[30].href">点击购买</a>
+					</td>
+					<td>
+						<a :href="res[31].href">
+							<img :src="res[31].pic">
+						</a>
+						<a :href="res[31].href">{{res[31].title}}</a>
+						<p>¥{{res[31].price.toFixed(2)}}<span>¥{{res[31].cost.toFixed(2)}}</span></p>
+						<a :href="res[31].href">点击购买</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+ </body>
+</html>

@@ -1,0 +1,107 @@
+/***顶部list***/
+.top{
+	border-bottom:1px solid #cccccc;
+}
+.top .top_list{
+	height:30px;
+	line-height:30px;
+	width:1200px;
+	margin:0px auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.top_list .list_left a{
+	padding-left:5px;
+	color:#000;
+}
+.top_list a:hover{
+	color:red;
+}
+.list_right a{
+	float:left;
+	color:#000;
+	line-height:30px;
+}
+/***logo图片***/
+header .image{
+	height:80px;
+	width:1200px;
+	margin:0px auto;
+}
+header .image .dflogo{
+	height:80px;
+	margin-left:30px;
+	float:left;
+}
+header .image .head_mm{
+	height:38px;
+	margin-left:200px;
+	margin-top:21px;
+	float:left;
+}
+header .image .gg_icon{
+	height:57px;
+	margin-top:11px;
+	float:right;
+}
+/***nav导航栏***/
+header .nav{
+	width:100%;
+	height:40px;
+	position:relative;
+	background-color:#FE4300;
+}
+header .nav .nav_list{
+	width:1200px;
+	height:40px;
+	margin:0px auto;
+	position:relative;
+}
+header .nav .nav_list>a{
+	width:120px;
+	float:left;
+	font-size:16px;
+	color:white;
+	line-height:40px;
+	text-align:center;
+}
+header .nav .nav_list>a:hover{
+	background-color:red;
+}
+header .nav .nav_list .newn{
+	position:absolute;
+	top:-5px;
+	left:310px;
+}
+header .nav .nav_list .new{
+	width:200px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	z-index:10;
+}
+.nav_list .new li{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-color:#FE4300;
+}
+.nav_list .new>ul{
+	display:block
+}
+.nav_list .new li:hover{
+	background-color:red;
+}
+.nav_list .new>ul>li>ul{
+	display:none;
+}
+.nav_list .new>ul>li:hover>ul{
+	display:block;
+}
+.nav_list .new a{
+	color:white;
+}
+.nav_list .new a:hover{
+	text-decoration:underline;
+}
